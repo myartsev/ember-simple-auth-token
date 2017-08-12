@@ -1,10 +1,11 @@
-/*jshint node:true*/
-/* global require, module */
-var Funnel = require('broccoli-funnel');
-var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+/* eslint-env node */
+'use strict';
+
+const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+const Funnel = require('broccoli-funnel');
 
 module.exports = function(defaults) {
-  var app = new EmberAddon(defaults, {
+  let app = new EmberAddon(defaults, {
      // Add options here
   });
 
